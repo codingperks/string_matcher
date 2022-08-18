@@ -3,7 +3,7 @@ String Matcher
 Aim: This program performs absolute and fuzzy string matching on columns of data
 Inputs:
     - Raw survey data (.csv) containing open answer columns 'QE1' & 'QE2'
-    - List of search terms/keywords to use for matching
+    - List of search terms/keywords to use for matching (search.txt)
 Outputs: A csv file containing:
     For each cell in QE1 & QE2:
         - A column returning True or False based on absolute string matching
@@ -33,3 +33,8 @@ Detailed method:
         d. Insert corresponding search term into the fuzzyword column
         e. Repeat for second highest match
     6. Export spreadsheet containing three columns: input, absolute, fuzzy
+
+History / to-do:
+    This tool was originally created to solve a bespoke issue and therefore does not have wide applicability.
+    Next steps involve refactoring the code to allow for easier application to any .csv file (currently, this only works
+        with csvs containing columns titled 'QE1' and 'QE2'. Removal of magic words and numbers etc also needed.
