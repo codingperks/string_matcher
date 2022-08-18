@@ -1,4 +1,4 @@
-# String Matching
+# String Matcher
 
 '''
     Author =  Ryan Perkins
