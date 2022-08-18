@@ -38,3 +38,4 @@ History / to-do:
     This tool was originally created to solve a bespoke issue and therefore does not have wide applicability.
     Next steps involve refactoring the code to allow for easier application to any .csv file (currently, this only works
         with csvs containing columns titled 'QE1' and 'QE2'. Removal of magic words and numbers etc also needed.
+    Adding test input is also on the to-do list.
