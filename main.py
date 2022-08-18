@@ -23,7 +23,7 @@ class Search:
 
     # Import data and set up dataframe
     def import_setup(self):
-        colnames = ["QE1", "QE2"]
+        colnames = ["QE1", "QE2"] # column names
         self.df = self.df[colnames]  # filter dataset to open-answer columns
         self.df = self.df.rename(columns={self.df.columns[0]: 'QE1'})
         self.df = self.df.rename(columns={self.df.columns[1]: 'QE2'})

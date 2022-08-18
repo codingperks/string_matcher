@@ -5,5 +5,5 @@ Both case and lowercase are used for fuzzy matching
 Insert each search term in quotation marks
 important: Keep lowercase and case on a single line respectively
 
-lowercase = [resolución alternativa de litigious, alternative streitbeilegung, risoluzione alternativa delle controversie, alternatywne metody rozstrzygania sporów, alternativ tvistlösning, court, alternative dispute resolution]
-case = [ADR, AS, ODR]
+lowercase = [this is an example of the lowercase search terms which could be inserted into this line]
+case = [THIS IS AN EXAMPLE OF CASE-SENSITIVE SEARCH TERMS]
