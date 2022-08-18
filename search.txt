@@ -1,0 +1,9 @@
+This text file is for inserting
+    case for case-sensitive absolute matching
+    lowercase for case-insensitive absolute matching
+Both case and lowercase are used for fuzzy matching
+Insert each search term in quotation marks
+important: Keep lowercase and case on a single line respectively
+
+lowercase = [resolución alternativa de litigious, alternative streitbeilegung, risoluzione alternativa delle controversie, alternatywne metody rozstrzygania sporów, alternativ tvistlösning, court, alternative dispute resolution]
+case = [ADR, AS, ODR]

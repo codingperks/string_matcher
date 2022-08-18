@@ -1,0 +1,35 @@
+ADR Matching Program
+
+Aim: This program performs absolute and fuzzy string matching on columns of data
+Inputs:
+    - Raw survey data (.csv) containing open answer columns 'QE1' & 'QE2'
+    - List of search terms/keywords to use for matching
+Outputs: A csv file containing:
+    For each cell in QE1 & QE2:
+        - A column returning True or False based on absolute string matching
+        - A column returning the highest token_set_ratio value (fuzzy match)
+        - A column returning the highest token_set_ratio search term (fuzzy match)
+        - A column returning the second highest token_set_ratio value (fuzzy match)
+        - A colun returning hte second highest token_set_ratio search term (fuzzy match)
+
+Package dependencies: pandas, thefuzz, glob
+
+Detailed method:
+    1. Import spreadsheet containing strings
+    2. Create database to hold results
+        a. Create additional absolute / fuzzy columns
+    3. Create search strategy
+        a. Two lists
+            i. Case insensitive matching
+            ii. Case sensitive matching
+    4. Apply absolute matching
+        a. Search each response for any matches in 3ai.
+        b. Search each response for any matches in 3aii.
+        c. If either of these searches are true, insert 'YES' into absolute matching box
+    5. Apply fuzzy matching (using thefuzz package) (token_set_ratio)
+        a. Search each response for any matches in 3ai, and record how closely this matches (as a %)
+        b. Search each response for any matches in 3aii, and record how closely this matches (as a %)
+        c. Insert highest % match into the fuzzyratio column
+        d. Insert corresponding search term into the fuzzyword column
+        e. Repeat for second highest match
+    6. Export spreadsheet containing three columns: input, absolute, fuzzy
