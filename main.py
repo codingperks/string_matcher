@@ -125,3 +125,13 @@ if __name__ == '__main__':
         search.fuzzy_match()
         search.export_results()
         print('Exported')
+
+# Authorship metadata
+__author__ = "Ryan Perkins"
+__copyright__ = "Copyright-free"
+__credits__ = ["Ryan Perkins"]
+__license__ = "GPL"
+__version__ = "1.1"
+__maintainer__ = "Ryan Perkins"
+__email__ = "r.perkins925@gmail.co.uk"
+__status__ = "Production"
